@@ -4,13 +4,13 @@ import Logo from './../../assets/graphics/logo.png';
 
 const Header = (props) => {
     return (
-        <header>
+        <header data-test="headerComponent">
             <div className="wrap">
                 <div className="logo"></div>
-                    <img src={Logo} alt="Logo" width="70px" height="50px" />
+                    <img data-test="logoImg" src={Logo} alt="Logo" width="70px" height="50px" />
             </div>
         </header>
     )
 };
 
-export default Header;
+export default Header;  
